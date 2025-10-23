@@ -1,0 +1,25 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Computer Vision
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+numpy==1.26.2
+scikit-image==0.22.0
+scipy==1.11.4
+
+# Video Processing
+moviepy==1.0.3
+
+# ML (per fasi future)
+scikit-learn==1.3.2
+
+# Utilities
+pydantic==2.5.0
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# CORS
+python-jose[cryptography]==3.3.0

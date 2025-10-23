@@ -1,0 +1,81 @@
+# Configurazione Sistema di Scoring - Inline Slalom Classic
+
+# Setup Campo Gara
+field_setup:
+  line_1:
+    cones: 20
+    distance_cm: 50
+    color: "orange"  # Colore da configurare in base alle gare reali
+
+  line_2:
+    cones: 20
+    distance_cm: 80
+    color: "blue"  # Colore da configurare
+
+  line_3:
+    cones: 14
+    distance_cm: 120
+    color: "yellow"  # Colore da configurare
+
+# Regole Generali
+rules:
+  classic_duration_seconds: 120
+  min_cones_valid_trick: 4
+  cone_displacement_penalty: -0.2
+
+# Passi/Tricks Configuration
+# Da configurare insieme all'utente con i passi specifici
+tricks:
+  # Esempio struttura - da completare
+  crazy:
+    name: "Crazy"
+    difficulty: 3
+    min_cones: 4
+    base_points: 1.5
+    description: "Passo base crazy"
+
+  nelson:
+    name: "Nelson"
+    difficulty: 4
+    min_cones: 4
+    base_points: 2.0
+    description: "Passo nelson"
+
+  special:
+    name: "Special"
+    difficulty: 5
+    min_cones: 4
+    base_points: 2.5
+    description: "Passo special"
+
+# Criteri di Valutazione
+evaluation_criteria:
+  technical_difficulty:
+    weight: 0.30
+    description: "Difficoltà tecnica dei passi eseguiti"
+
+  trick_variety:
+    weight: 0.25
+    description: "Varietà di passi diversi"
+
+  execution_cleanliness:
+    weight: 0.25
+    description: "Pulizia nell'esecuzione (coni non spostati, precisione)"
+
+  field_usage:
+    weight: 0.20
+    description: "Utilizzo bilanciato delle tre file di coni"
+
+# Sistema di Penalità
+penalties:
+  cone_displaced: -0.2
+  invalid_trick: 0  # Semplicemente non conta nel punteggio
+  out_of_bounds: -0.5
+
+# Scoring Algorithm
+scoring:
+  max_score: 10.0
+  min_score: 0.0
+
+# NOTE: Questo file è un template iniziale
+# Sarà necessario configurarlo con i passi reali e il sistema di punteggio specifico
